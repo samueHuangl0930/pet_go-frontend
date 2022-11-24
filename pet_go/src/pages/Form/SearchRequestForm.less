@@ -1,0 +1,179 @@
+@import url("../../assets/style/theme.less");
+
+#SharerForm {
+    * {
+        font-family: "Roboto";
+    }
+
+    h3 {
+        color: #000;
+        font-weight: 500;
+    }
+}
+
+.RequestFormwarp {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: @bottom-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+}
+
+.RequestFormTitle {
+    color: #ff9458;
+    font-weight: 600;
+    font-size: 24px;
+    text-align: center;
+    width: 100%;
+    padding: 2% 0;
+    margin-bottom: 0;
+}
+
+.formsubtitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: @dark-main-color;
+}
+
+.formContent {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.formContentText {
+    font-weight: 900;
+    font-size: 16px;
+    margin-right: 5%;
+    color: #5d5858;
+    font-style: normal;
+    margin-bottom: 2%;
+}
+
+.formContentTextArea .ant-form-item-label>label {
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 5%;
+    width: 100%;
+}
+
+.formContentTextArea {
+    display: flex;
+    flex-direction: column;
+}
+
+// .addPetBtn {
+//     width: 100%;
+//     height: 55px;
+//     font-weight: 900;
+//     font-size: 24px;
+//     background: @main-color;
+//     // background: #5EBBB4;
+//     box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.043);
+//     border-radius: 2px;
+//     color: rgb(255, 255, 255);
+// }
+
+.formHr {
+    color: rgb(53, 53, 53);
+    margin: 3% 0;
+}
+
+.formBtnWarp {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.formLineImg {
+    width: 8%;
+    margin-right: 2%;
+}
+
+.LineWrap {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.LineLable {
+    font-weight: 900;
+    font-size: 16px;
+    color: #5d5858;
+    font-style: normal;
+    margin: 0;
+    margin-right: 1%;
+}
+
+.LineInput input {
+    margin: 0;
+}
+
+.lineFormItem {
+    margin: 0;
+}
+
+.petListSelect {
+    display: flex;
+    flex-direction: column;
+}
+
+.ListPetCardRadio {
+    height: 100%;
+    color: @dark-main-color;
+    background-color: @drop-down-color;
+}
+
+.PetCardBtn {
+    background-color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 2px 1px 1px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    height: 30px;
+    font-weight: bolder;
+    font-size: 15px;
+    color: #1a535c;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2%;
+    margin-bottom: 2%;
+
+    &:hover,
+    &:focus {
+        background-color: #1a535c;
+    }
+}
+
+#RequestForm {
+    .PetCardText {
+        color: rgba(0, 0, 0, 0.5);
+        font-weight: 900;
+        font-size: 16px;
+        margin: 0;
+        margin-right: 5px;
+    }
+
+    .ant-radio-button-wrapper {
+        height: 100%;
+        background-color: @drop-down-color;
+    }
+
+    .ant-radio-group-solid .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled) {
+        color: #fff;
+        background: #d7dfd7d6;
+        border-color: #eef6eed6;
+        color: rgb(53, 53, 53);
+    }
+
+    .ant-radio-button-wrapper:hover {
+        background: #eef6eed6;
+        border-color: #eef6eed6;
+        color: rgb(53, 53, 53);
+    }
+}

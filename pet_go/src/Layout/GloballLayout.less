@@ -1,0 +1,313 @@
+@import url('../assets/style/theme.less');
+
+/* 全域樣式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft JhengHei', 'Arial';
+    // font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-bottom: 0;
+}
+
+h1 {
+    font-size: 1.875rem;
+}
+.show {
+    display: block;
+    width: 50px;
+    color: @bottom-color;
+}
+
+.hide {
+    display: none;
+}
+
+/* 佈局樣式 */
+html,
+body {
+    min-height: 100%;
+    font-size: 1rem;
+}
+.ant-layout-header {
+    background-color:@main-color;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.ant-layout-content {
+    min-height: calc(100vh - 134px);    
+    background-color:#F4F5F4;
+}
+
+.ant-layout-footer {
+    height: 70px;
+    background-color:@main-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* header */
+
+.logoBlock {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .logoImage {
+        margin-right: 0.875rem;
+    }
+    h1{
+        font-weight: 900;
+        color: @feature-adoptions-color;
+    }
+}
+
+#global {
+    .menuBar {
+        width: calc(100% - 150px);
+        background-color: @main-color;
+        .ant-menu-item {
+            color: @bottom-color;
+            font-size: 22px;
+
+            a{
+                color: @bottom-color;
+            }
+
+            &::after {
+                border-bottom: unset;
+            }
+
+            &:hover,
+            &:focus {
+                color:@bottom-color  !important;
+                font-weight: bold;
+
+                &::after {
+                    border-bottom: 3px solid @bottom-color  !important;
+                }
+
+                .ant-space-item {
+                    color: @bottom-color;
+                }
+            }
+
+            &:active {
+                background-color: unset;
+            }
+
+           
+        }
+
+        .ant-menu-item:nth-child(2) {
+            &:hover {
+                &::after {
+                    border-bottom: 2px solid @main-color;
+                }
+            }
+        }
+
+        .ant-menu-item:nth-child(6) {
+            margin-left: auto;
+            padding: 0;
+        }
+
+        .ant-menu-item-selected {
+            outline: none;
+            // color: @text-color  !important;
+            font-weight: bold;
+
+            a {
+                color: @bottom-color;
+            }
+
+            &::after {
+                border-bottom: unset !important;
+            }
+        }
+    }
+
+    .ant-avatar {
+        background-color: @bottom-main-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .ant-menu-vertical {
+        border-right: 1px solid @bottom-color;
+    }
+}
+
+/* dropdown */
+.ant-dropdown {
+    &:hover {
+        border-bottom: unset;
+    }
+    .ant-dropdown-menu{
+        background-color:@drop-down-color ;
+    }
+    .ant-dropdown-menu-item {
+        background-color:@drop-down-color;
+        color: @dark-main-color;
+        padding: 5px 20px;
+        font-size: 0.875rem;
+
+        svg {
+            font-size: 0.875rem;
+        }
+    }
+}
+
+//響應式Menu
+.menuBarList {
+    .ant-menu-item {
+
+        &:hover,
+        &:focus {
+            color: @main-color;
+            font-weight: bold;
+            border-bottom: 2px solid @main-color;
+            background-color: unset;
+
+            a {
+                color: @main-color;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .ant-menu-item:nth-child(6) {
+        display: none;
+    }
+
+    li.ant-menu-item.ant-menu-item-selected.ant-menu-item-only-child {
+        background-color: rgba(@main-color, 0.1);
+        color: @main-color;
+    }
+
+    .ant-menu-item-selected {
+        outline: none;
+        color: @main-color !important;
+        font-weight: bold;
+
+        a {
+            color: @main-color;
+        }
+    }
+}
+
+@media screen and (max-width:992px) {
+    #global {
+
+        .ant-dropdown-trigger {
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+
+        .ant-dropdown {
+            right: 0;
+        }
+
+        .ant-avatar {
+            margin-left: auto;
+        }
+
+        .barIcon {
+            background-color: unset;
+            color: @main-color;
+            border-color: unset;
+
+            &:hover,
+            &:focus {
+                background-color: @main-color;
+                color: @bottom-color;
+            }
+        }
+
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+            background-color: rgba(@main-color, 0.2);
+        }
+    }
+}
+@media screen and (max-width:992px) {
+    #global {
+
+        .ant-dropdown-trigger {
+            margin-left: auto;
+            margin-right: 1rem;
+        }
+
+        .menuBar {
+            display: none;
+        }
+
+        .ant-dropdown {
+            right: 0;
+        }
+
+        .ant-avatar {
+            margin-left: auto;
+        }
+
+        .barIcon {
+            background-color: unset;
+            color: @bottom-color;
+            border-color: @bottom-color;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover,
+            &:focus {
+                background-color: @main-color;
+                color: #ffffff;
+            }
+        }
+        path {
+            width: 50px;
+        }
+        .ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected {
+            background-color: rgba(@main-color, 0.2);
+        }
+    }
+}
+
+@media screen and (max-width:576px) {
+    h1 {
+        font-size: 1.25rem;
+    }
+}
+
+.ant-drawer-content-wrapper {
+    width: 200px !important;
+}
+ul.ant-menu.ant-menu-root.ant-menu-vertical.ant-menu-light {
+    border: none;
+}
+
+/*Footer*/
+.communityicon{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+}
+
+.footer{
+    color: rgb(255, 255, 255);
+    font-weight: 800;
+    font-size: 14px;
+}

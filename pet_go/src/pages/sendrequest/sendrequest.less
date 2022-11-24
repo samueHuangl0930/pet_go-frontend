@@ -1,0 +1,173 @@
+@import url('../../assets/style/theme.less');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Microsoft JhengHei', 'Arial';
+    font-weight: 500;
+}
+
+#Sendrequest {
+    .PetCardLabel3 ,.PetCardLabel2{
+        font-size: 14px;
+       
+    }
+
+    .ListButtonWarp {
+        margin-top: 55px;
+    }
+
+    .container {
+        background-color: @bottom-main-color;
+        min-height: calc(100vh - 134px);
+        width: 100%;
+    }
+
+    .Commentlist {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: @bottom-color;
+        width: 1200px;
+    }
+
+    .Commentlistrow {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .Commenttitle {
+        width: 100%;
+        height: 120px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        h1 {
+            font-weight: 600;
+            font-size: 40px;
+            color: rgba(0, 0, 0, 0.5);
+        }
+    }
+
+    .Commentlistshow {
+        display: flex;
+        justify-content: center;
+
+        .commentary {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            height: auto;
+            width: 75%;
+            border-radius: 20px;
+            background-color: @drop-down-color;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: row;
+            margin-left: 2px;
+            margin-right: 2px;
+
+            .commentaryrow {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+                justify-content: space-around;
+
+                .imgBlock {
+                    height: 170px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: top;
+                        border-radius: 20px;
+                    }
+                }
+
+                .wrapper {
+                    width: 100%;
+
+                    .Content {
+                        margin: 20px 0;
+                        width: 100%;
+                        // min-height: 140px;
+                        display: flex;
+                        flex-direction: column;
+
+                        .Name {
+                            width: 100%;
+                            height: 50px;
+
+                            h2 {
+                                font-size: 30px;
+                                font-weight: 800;
+                                color: @dark-main-color;
+                            }
+                        }
+
+                        .Data {
+                            display: flex;
+                            justify-content: space-between;
+                            flex-direction: row;
+
+                            .Probably {
+                                width: 70%;
+                                display: flex;
+                                flex-direction: column;
+
+                                .first {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                }
+
+                                .second {
+                                    display: flex;
+                                    flex-direction: row;
+                                    justify-content: space-between;
+                                    width: 100%;
+                                }
+                            }
+                        }
+
+                        
+                    }
+                }
+
+            }
+
+        }
+    }
+
+
+    @media screen and (max-width:990px) {
+
+        .ListButtonWarp {
+            margin-top: 0;
+
+        }
+
+        .ButtonWarp {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .ListButton {
+            width: 45%;
+        }
+
+
+      
+    }
+
+
+   
+}

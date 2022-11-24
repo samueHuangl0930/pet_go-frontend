@@ -1,0 +1,313 @@
+@import url("../../assets/style/theme.less");
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto";
+    font-weight: 500;
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+#Home {
+    .containter {
+        min-height: calc(100vh - 134px);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        background-color: @bottom-main-color;
+    }
+
+    .Carousel {
+        height: 500px;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+
+    .Carouselson {
+        height: 600px;
+        width: 100%;
+        margin-bottom: 50px;
+        // background-color: aqua;
+    }
+
+    .Carouselson .slick-slider.slick-initialized {
+        height: 500px;
+    }
+
+    .autoblock {
+        height: 550px;
+        width: 10%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .Carousel button.slick-arrow.slick-prev {
+        display: none !important;
+    }
+
+    .Carousel button.slick-arrow.slick-next {
+        display: none !important;
+    }
+
+    .Chooseall {
+        height: 100%;
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .Choosemain {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .Choose {
+        height: 420px;
+        border-radius: 20px;
+        background-color: @bottom-color;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 15px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+
+        a {
+            position: absolute;
+            bottom: 0;
+        }
+
+        span h2 {
+            text-align: justify;
+        }
+    }
+
+    .Choose .title {
+        width: 80%;
+        height: 50px;
+    }
+
+    .Choose .title h1 {
+        font-weight: 900;
+    }
+
+    .Choose span {
+        width: 80%;
+        margin-top: 2%;
+    }
+
+    .Choose span h2 {
+        font-weight: 600;
+        color: #afafaf;
+    }
+
+    .Comment {
+        margin: auto 0;
+        height: 400px;
+        width: 100%;
+        background-color: @bottom-color;
+        margin-bottom: 50px;
+    }
+
+    .title h1 {
+        color: @dark-main-color;
+        font-weight: 633;
+        font-size: 48;
+    }
+
+    .Commentcard {
+        height: 100%;
+        min-height: 400px;
+        padding-top: 10px;
+
+        .bannerBlock {
+            display: flex;
+            justify-content: center;
+            align-content: space-around;
+            height: 100%;
+
+            .pictureBlock {
+                display: flex;
+                justify-content: center;
+                height: 150px;
+
+                .imgBlock {
+                    width: 100%;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+            }
+
+            .titleBlock {
+                .nametotal {
+                    display: inline-block;
+                    display: flex;
+                    justify-content: space-between;
+                    margin-bottom: 4.5px;
+
+                    .master {
+                        margin: 0 5px;
+
+                        strong {
+                            font-size: 30px;
+                            font-weight: 600;
+                            text-align: center;
+                            color: @dark-main-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+
+                    .petname {
+                        strong {
+                            font-size: 25px;
+                            font-weight: 600;
+                            text-align: center;
+                            color: @dark-main-color;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                        }
+                    }
+                }
+
+                .introduce {
+                    height: 200px;
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #717171;
+                    display: flex;
+                    flex-direction: column;
+                    text-align: left;
+                    overflow-y: scroll;
+                    padding-bottom: 10px;
+
+                    .userName {
+                        width: 100%;
+                        display: flex;
+                        flex-direction:column;
+                        flex-grow: 1;
+                        justify-content: flex-end;
+                        align-items: end;
+                    }
+                }
+            }
+
+            .area {
+                padding-top: 7px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: flex-end;
+
+                .icon {
+                    font-size: 12px;
+                    font-weight: 600;
+                    text-align: center;
+                    color: black;
+                }
+
+                span {
+                    font-size: 16px;
+                    font-weight: 600;
+                    text-align: center;
+                    color: #717171;
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .Comment .slick-slider.slick-initialized {
+        height: 100%;
+    }
+
+    .Comment .slick-initialized .slick-slide {
+        height: 400px;
+        width: 250px;
+        padding: 0 5px;
+    }
+
+    .slick-dots {
+        display: none !important;
+    }
+
+    .Idea {
+        height: 100%;
+        width: 100%;
+
+        .title h1 {
+            color: @dark-main-color;
+            font-weight: 633;
+            font-size: 48;
+        }
+
+        .introduce {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            background-color: @dark-main-color;
+
+            .bannerBlock {
+                width: 100%;
+                margin: 30px 0;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                .imgBlock {
+                    height: 490px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 0 5%;
+
+                    img {
+                        width: 100% !important;
+                        height: 100% !important;
+                        object-fit: cover !important;
+                    }
+                }
+
+                .titleBlock span {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    strong {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: @drop-down-color;
+                        padding: 5%;
+                        line-height: 70px;
+                        text-align: justify;
+                    }
+                }
+            }
+        }
+    }
+}

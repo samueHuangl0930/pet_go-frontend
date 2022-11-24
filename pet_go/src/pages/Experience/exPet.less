@@ -1,0 +1,181 @@
+@import url('../../assets/style/theme.less');
+@import "~slick-carousel/slick/slick.css";
+@import "~slick-carousel/slick/slick-theme.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+#ExPet {
+    background-color: #E6E6E6 !important;
+    min-height: calc(100vh - 134px);
+    width: 100%;
+    height: 100%;
+    // display: flex;    
+    margin: 0;
+
+
+
+ 
+
+    .searchFrom{
+  
+
+        p{
+            align-items: center;
+            margin: 0;
+            background-color: @drop-down-color;
+            padding: 3px 5px 3px 5px;
+            border: 1px solid #d9d9d9;
+            color: @dark-main-color;
+            font-weight: 900;
+text-align: center;
+        }
+    }
+
+
+    .exFilter {
+
+        background-color: @bottom-main-color;
+        box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.15);
+        width: 100%;
+
+        margin: 0;
+        display: flex;
+        align-items: center;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-bottom: 2%;
+
+
+        .ant-select.ant-select-in-form-item {
+            /* width: 100%; */
+            width: auto;
+        }
+
+        .trimFilter {
+            display: flex;
+            flex-direction: row;
+            margin-left: 5%;
+        }
+
+        h2 {
+            width: 100%;
+            display: inline;
+            color: @dark-main-color;
+            font-weight: bold;
+   
+
+            input {
+                height: 36px;
+            }
+        }
+
+        h2:nth-child(2) {
+            margin-left: 1%;
+        }
+
+        label {
+            padding: 0 10%;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            background: #e6f8f5;
+            border: 1px solid #d9d9d9;
+            width: 100%;
+
+        }
+        .ant-select.ant-select-in-form-item {
+            width: 50%;
+        }
+
+        .ant-picker {
+            width: 100%;
+        }
+
+        .varietyWarp.ant-select.ant-select-in-form-item {
+            width: 100%;
+        }
+
+
+
+
+        input:nth-child(3) {
+            margin-left: 1%;
+        }
+
+        .trimShareBtn {
+
+
+            align-self: end;
+
+            // margin-right: 5%;
+            .trimSearchBtn {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 10%;
+
+
+
+            }
+
+            .shareBtn {
+                display: flex;
+                // display: inline;
+                height: 100%;
+
+                button {
+                    // display: inline;
+                    // position:absolute;
+                    // bottom:0;
+                }
+            }
+        }
+
+    }
+
+    .exCards {
+        // border: 1px solid red;
+        padding: 1%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:576px) {
+    #ExPet {
+    
+        .ant-picker {
+            width: auto;
+        }
+    
+        .ant-select {
+            width: auto;
+        }
+    
+       
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    #ExPet {
+    
+        .ant-picker {
+            width: auto;
+        }
+    
+        .ant-select {
+            width: auto;
+        }
+    
+       
+    }
+}

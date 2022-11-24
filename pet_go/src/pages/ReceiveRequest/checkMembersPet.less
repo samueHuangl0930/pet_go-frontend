@@ -1,0 +1,275 @@
+@import url('../../assets/style/theme.less');
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+#checkMembersPet {
+    background-color: @bottom-main-color;
+
+    /*白底資料-照片*/
+
+    .DoingShareDetailedWarp {
+        background-color: @bottom-color;
+        margin-top: 2%;
+        margin-bottom: 2%;
+
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 25px;
+
+    }
+
+.PetListDetail{
+    margin-top: 3%;
+}
+.DetailTextRight{
+
+    margin-top: 4%;
+    
+}
+    .DetailedJmimgWarp {
+        // border: 2px solid aqua;
+        width: 85%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+
+        img {   
+             border-radius: 20px;
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+        }
+    }
+
+    .DetailTextWarp .DetailText{
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 35px;
+        color: @dark-main-color;
+        margin-bottom: 25px;
+    }
+.DetailText{
+
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.DetailTextTitle{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    color: @dark-main-color;
+   margin-top: 5%;
+}
+
+    .caption {
+        // border: 1px solid red;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        hr {
+            width: 70%;
+            border: 2px solid @main-color;
+        }
+
+        h1 {
+            font-size: 34px;
+            width: 100%;
+            color: @main-color;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .noCommentary {
+        border: 1px dashed black;
+        border-radius: 15px;
+        display: flex;
+        justify-content: center;
+        margin: 1.5%;
+        padding: 3%;
+    }
+
+
+.captionBottom{
+    height: 300px;
+    overflow-y: scroll;
+}
+
+    .commentary {
+        // border: 1px solid black;
+        box-shadow: 0 3px 1px 1px rgba(0, 0, 0, 0.1);
+        border-radius: 15px;
+        margin: 1.5%;
+        background-color: @drop-down-color;
+        display: flex;
+      // justify-content: flex-end;
+        .peopleImage {
+            // border: 2px solid aqua;
+            width: 100%;
+            height: auto;
+         
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                border-radius: 25px;
+                // border: 5px double @main-color;
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                padding: 15px;
+            }
+        }
+
+        .trimPeopleComm {
+            width: 95%;
+
+            .peopleComm {
+                // border: 1px solid black;
+                margin-top: 2%;
+               
+
+                hr {
+                    width: 75%;
+                    margin: 1% 0;
+                }
+
+                h2 {
+                    color: @dark-main-color;
+                    font-weight: bold;
+                    margin: 1% 0;
+                }
+
+                p {
+                    font-size: 17px;
+                    line-height: 25px;
+                    font-weight: 600;
+                }
+
+            }
+
+            .commDate {
+                // border: 1px solid black;
+                margin-bottom: 1%;
+                font-weight: 600;
+                width: 100%;
+                display: flex;
+                align-items: flex-end;
+                justify-content: flex-end;
+            }
+        }
+    }
+
+.commentsWarp{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    background-color:@bottom-color ;
+    box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+    .commentsBtn{
+        background-color:@bottom-color ;
+        border: none;
+        height: 50px;
+        color: @dark-main-color;
+        box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+        border-radius: 0 10px  10px 10px;
+        font-size: 20px;
+        font-weight: 900;
+
+    }
+
+    .commentsInput{
+        border: none;
+        width: 100%;
+        height: 50px;
+        box-shadow: inset 0px 2px 0px rgba(0, 0, 0, 0.25);
+        border-radius:  10px 0 10px  10px;
+       
+    }
+}
+
+
+
+
+@media screen and (max-width:576px) {
+
+    #checkMembersPet {
+    .DetailTextWarp .DetailText{
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: @dark-main-color;
+        margin-bottom: 25px;
+    }
+
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    #checkMembersPet {
+        .DetailTextWarp .DetailText{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            color: @dark-main-color;
+            margin-bottom: 25px;
+        }
+    
+        }
+    
+    
+}
+
+@media screen and (min-width:768px) {
+
+    #checkMembersPet {
+        .DetailTextWarp .DetailText{
+            font-weight: 700;
+            font-size: 20px;
+            line-height: 20px;
+            color: @dark-main-color;
+            margin-bottom: 25px;
+        }
+    
+        }
+    
+    
+}
+
+@media screen and (min-width:992px) {
+
+    #checkMembersPet {
+        .DetailTextWarp .DetailText{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 30px;
+            color: @dark-main-color;
+            margin-bottom: 25px;
+        }
+    
+        }
+    
+    
+}

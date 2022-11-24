@@ -1,0 +1,280 @@
+@import url('../../assets/style/theme.less');
+
+.RecordListwarp {
+    margin-top: 2%;
+    margin-bottom: 2%;
+    background: @bottom-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+
+    ::-webkit-scrollbar {
+        display: none;
+
+    }
+
+    a{
+        width: 100%;
+    }
+    
+}
+
+.PetCardText {
+    text-align: start;
+}
+
+.PetCardCenter {
+    padding: 3% 0;
+}
+
+.ListButtonWarp {
+    display: flex;
+    align-items: center;
+}
+
+.PetCardimg {
+    display: flex;
+    justify-content: center;
+}
+
+.ListButtonWarp {
+    padding: 0 2%;
+}
+
+.PetListModal {
+
+    width: 700px !important;
+
+    .ant-modal-content {
+        background: @bottom-color;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 15px;
+
+    }
+
+    .ant-modal-header {
+        border-radius: 15px;
+    }
+
+    .ant-btn-primary {
+        display: none !important;
+    }
+
+    .ant-btn-default {
+        background: @dark-main-color;
+        border-radius: 20px;
+        color: @drop-down-color;
+    }
+
+    .ant-modal-footer {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .ant-modal-title {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 22px;
+        align-items: center;
+        color: @dark-main-color;
+    }
+
+    .ant-modal-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+.PetCardText {
+    margin-top: 15px;
+
+}
+
+.RecordListTitle {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+    font-size: 26px;
+    text-align: center;
+    width: 100%;
+    padding: 2% 0;
+    margin-bottom: 0;
+}
+
+.ListWarp {
+    background: rgba(66, 189, 180, 0.08);
+    border-radius: 10px;
+    margin-bottom: 3%;
+    padding: 2% 0;
+    height: 575px;
+    overflow-y: scroll;
+}
+
+
+
+.ExperienceList .PetCard {
+    width: 95%;
+
+}
+
+
+
+.SeemoreIcon {
+    text-decoration: none;
+    color: #1A535C;
+    font-size: 24px;
+}
+
+
+.ListPetCard {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    background-color: @drop-down-color;
+    margin: 2% 0 0 0;
+}
+
+.PetCardTextDetailText {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: #000000;
+    margin-bottom: 8%;
+}
+
+.PetCardTextDetail {
+    margin-top: 5%;
+
+}
+
+.PetCardTextDetailBottomTitle {
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 22px;
+    color: @dark-main-color;
+
+}
+
+.PetCardTextDetailbottom {
+
+    margin: 3% 0;
+
+    .ant-col {
+
+        margin: 0 2%;
+    }
+
+}
+
+.listPetJmimgWarp {
+    width: 100%;
+
+    padding: 15px;
+    object-fit: cover;
+}
+
+.listPetJmimg {
+    width: 100%;
+
+
+    border-radius: 25px;
+}
+
+@media screen and (max-width:576px) {
+
+    .PetCardContentList .PetCardContent1 {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 2%;
+        margin-top: 1%;
+        margin-left: 0%;
+
+    }
+
+    .PetCardContentList .PetCardText {
+        font-weight: 800;
+        font-size: 14px;
+        margin: 0 5px;
+    }
+
+    .PetCardContentList .PetCardContent1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .PetCardContentList {
+        margin: 4px 0 6px 0;
+    }
+
+    .ListPetCard:hover {
+        background-color: #e1e9e1d6;
+    }
+
+
+}
+
+
+@media screen and (max-width:768px) {
+
+    .PetCardContentList .PetCardContent1 {
+        display: flex;
+        justify-content: start;
+        margin-bottom: 2%;
+        margin-top: 1%;
+        margin-left: 0%;
+
+    
+        
+
+    }
+    .ListWarp {
+      
+            height: 600px;
+          
+        }
+
+
+
+    .PetCardContentList .PetCardText {
+        font-weight: 800;
+        font-size: 14px;
+        margin: 0 4px;
+    }
+
+    .PetCardContentList {
+        margin: 4px 0 6px 0;
+    }
+
+    .ListPetCard:hover {
+        background-color: #eef6eed6;
+    }
+
+
+
+
+}
+
+@media screen and (max-width:1200px) {
+
+
+    .ListPetCard:hover {
+        background-color: #e1e9e1d6;
+    }
+
+ 
+}
+
+
+@media screen and (max-width:992px) {
+
+    .RecordListwarp .PetCardText:nth-child(3) {
+        display: none;
+    }
+   
+}
